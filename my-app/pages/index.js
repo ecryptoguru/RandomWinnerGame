@@ -265,7 +265,7 @@ export default function Home() {
       return (
         <div>
           <button className={styles.button} onClick={joinGame}>
-            Join Game 🚀
+            Join Lottery 🚀
           </button>
         </div>
       );
