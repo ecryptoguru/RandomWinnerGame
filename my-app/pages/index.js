@@ -278,7 +278,7 @@ export default function Home() {
             type="number"
             className={styles.input}
             onChange={(e) => {
-              // The user will enter the value in ether, we will need to convert
+              // The user will enter the value in matic, we will need to convert
               // it to WEI using parseEther
               setEntryFee(
                 e.target.value >= 0
@@ -286,7 +286,7 @@ export default function Home() {
                   : zero
               );
             }}
-            placeholder="Entry Fee (ETH)"
+            placeholder="Entry Fee (MATIC)"
           />
           <input
             type="number"
@@ -298,7 +298,7 @@ export default function Home() {
             placeholder="Max players"
           />
           <button className={styles.button} onClick={startGame}>
-            Start Game 🚀
+            Begin Lottery 🚀
           </button>
         </div>
       );
@@ -314,10 +314,10 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to Random Winner Game!</h1>
+          <h1 className={styles.title}>Welcome to AnkitPunks Game!</h1>
           <div className={styles.description}>
-            It's a lottery game where a winner is chosen at random and wins the
-            entire lottery pool
+            It's a lottery game, a winner is chosen at random using LINK VRF and wins the
+            entire pool
           </div>
           {renderButton()}
           {logs &&
@@ -332,7 +332,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className={styles.footer}>Made with &#10084; by Ankit Das</footer>
+      <footer className={styles.footer}>Created 2023; by Ankit Das</footer>
     </div>
   );
 }
