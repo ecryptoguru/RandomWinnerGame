@@ -1,5 +1,5 @@
 # RandomWinnerGame
-RandomWinner Dapp using LinkVRF and GraphQL
+Full-stack Nextjs dapp RandomWinner made using LinkVRF and GraphQL
 
 # Random winner using Chainlink VRF 
 
